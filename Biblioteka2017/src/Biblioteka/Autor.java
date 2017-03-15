@@ -16,6 +16,11 @@ public class Autor {
 	public void setPrezime(String prezime) {
 		this.prezime = prezime;
 	}
+	@Override
+	public String toString() {
+		return "Autor [ime=" + ime + ", prezime=" + prezime + "]";
+	}
+	
 	
 	
 }

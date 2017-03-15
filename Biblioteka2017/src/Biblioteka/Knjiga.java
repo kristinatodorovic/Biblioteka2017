@@ -41,6 +41,27 @@ public class Knjiga {
 		this.autori = autori;
 	}
 	
+	@Override
+	public String toString() {
+		return "Knjiga [naslov=" + naslov + ", isbn=" + isbn + ", izdavac=" + izdavac + ", izdanje=" + izdanje
+				+ ", autori=" + autori + "]";
+	}
+	
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Knjiga other = (Knjiga) obj;
+		if (isbn != other.isbn)
+			return false;
+		return true;
+	}
+	
 	
 	
 	
